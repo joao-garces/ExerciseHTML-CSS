@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #525561;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+
+nav {
+    min-height: 60px;
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #99a4b4;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: rgb(187, 185, 185);
+}
+
+a:hover{
+    color: #228cea;
+}
+
+button{
+    padding: 10px 20px;
+    height: 50px;
+    font-weight: bold;
+    border:none;
+    background: #228cea;
+    color: whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover{
+    font-size: 14px;
+}
+
+input{
+    background-color: #323644;
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid #323644;
+    width: 25%;
+    margin: 0 10px 10px 0;
+    height: 50px;
+    padding: 1rem;
+}
+
+input:hover{
+    border-color: #228cea;
+    box-shadow: 0 0 20px #228cea;
+}
+
+input:focus{
+    outline: none; /* Para retirar a outline default, se input seleccionado*/
+    border-color: darkgrey;
+}
+
+form ::placeholder{
+    font-size: 0.7rem;
+    color: whitesmoke;
+}
+
+div p{
+    color:#99a4b4;
+}
+
+.mainblock {
+    position: relative;
+    background-image: url('../images/mountains.jpeg');
+    background-image: auto;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 80px;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.mainblock:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right, rgba(38, 42, 55,1), rgba(38, 42, 55, 0.5));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    z-index: 0;
+    pointer-events: none; /*Bloqueia tudo o que o rato possa fazer neste pseudo elemento (gradiente)*/
+}
+
+.headerxpto{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    z-index: 10;
+}
+
+.headerlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerlogo div{
+    width: 30px;
+    height: 30px;
+    background: #228cea;
+    border-radius: 50%;
+}
+
+.headerlogo span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.headerlink{
+    display: flex;
+    width: 150px;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: calc(100vh - 250px);
+    margin: 0 80px;
+    z-index: 10;
+}
+
+.blue{
+    color: #228cea !important;
+    margin-left: 0px !important;
+}
+
+.bluedot{
+    color: #228cea;
+    font-weight: bold;
+}
+
+.fa-address-card{
+    position: absolute;
+    margin-left: 210px;
+    transform: translateY(100%);
+    color: whitesmoke;
+}
+
+.fa-envelope{
+    position: absolute;
+    margin-left: 470px;
+    transform: translateY(100%);
+    color: whitesmoke;
+}
+
+.fa-eye{
+    position: absolute;
+    margin-left: 470px;
+    transform: translateY(100%);
+    color: whitesmoke;
+}
+
+input[type="text"]:focus + .fa-address-card {
+    display: none;
+  }
+
+  input[type="email"]:focus + .fa-envelope {
+    display: none;
+  }
+
+  input[type="password"]:focus + .fa-eye {
+    display: none;
+  }
+
+.formstyle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 500px;
+    gap: 20px;
+}
+
+.formstyle input{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.formstyle div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.formstyle div input{
+    min-width: calc(50% - 10px);
+}
+
+.formstyle button{
+    width: min(calc(50% - 10px), calc(50% - 10px));
+}
+
+/* Posicionamento do circulo face ao h2 com posições absolutas
+.logo{
+    width: 30px;
+    aspect-ratio: 1;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: -55px;
+    top: calc((67px / 2) - (30px / 2));
+}
+
+.logotext{
+    position: relative;
+    margin-left: 100px;
+}
+*/
